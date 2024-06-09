@@ -1,0 +1,16 @@
+[Unit]
+Description=Apache Solr
+After=network.target
+
+[Service]
+Type=simple
+User=<Server User Account>>
+ExecStart=/opt/solr-9.6.0/bin/solr start -c -p 8984
+ExecStop=/opt/solr-9.6.0/bin/solr stop -p 8984
+Restart=on-failure
+RestartSec=5
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Install]
+WantedBy=multi-user.target
