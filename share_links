@@ -1,0 +1,34 @@
+    <div class="sharedaddy sd-sharing-enabled">
+        <div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing">
+            <h3 class="sd-title">{{ 'SHARE'|t }}</h3>
+            <div class="sd-content">
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="display: inline-block; margin-right: 10px;">
+                        <a rel="nofollow" href="https://gab.com/compose?url={{ page.url(true) }}" target="_blank" title="{{ page.header.title }}">
+                            <img src="{{ theme_url }}/img/share_gab.png" alt="Gab" style="width: 90px; height: 34px;">
+                        </a>
+                    </li>
+                    <li style="display: inline-block; margin-right: 10px;">
+                        <a rel="nofollow" href="http://twitter.com/home?status={{ page.title|replace({' ': "%20"}) }}-{{ page.url(true) }}" target="_blank" title="{{ page.header.title }}">
+                            <img src="{{ theme_url }}/img/share_x.png" alt="Twitter" style="width: 90px; height: 34px;">
+                        </a>
+                    </li>
+                    <li style="display: inline-block; margin-right: 10px;">
+                        <a rel="nofollow" href="https://truthsocial.com/compose?url={{ page.url(true) }}" target="_blank" title="{{ page.header.title }}">
+                            <img src="{{ theme_url }}/img/share_ts.png" alt="Truth Social" style="width: 90px; height: 34px;">
+                        </a>
+                    </li>
+                    <li style="display: inline-block; margin-right: 10px;">
+                        <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url(true) }}" target="_blank" title="{{ page.header.title }}">
+                            <img src="{{ theme_url }}/img/share_fb.png" alt="Facebook" style="width: 90px; height: 34px;">
+                        </a>
+                    </li>
+                    <li style="display: inline-block;">
+                        <a rel="nofollow" href="https://www.pinterest.com/pin/create/button/?url={{ page.url(true) }}" target="_blank" title="{{ page.header.title }}">
+                            <img src="{{ theme_url }}/img/share_pt.png" alt="Pinterest" style="width: 90px; height: 34px;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
